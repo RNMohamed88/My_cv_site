@@ -1,20 +1,81 @@
-<!-- Font Awesome - تأكد إنها موجودة في <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>محمد راضي أحمد</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+    .download-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="profile.jpg" alt="صورة شخصية" class="profile-pic">
+    <h2>محمد راضي</h2>
+    <h1>محمد راضي أحمد</h1>
+    <h3 style="text-align: center; direction: ltr; font-weight: bold;">MR MOHAMED RADY AHMED</h3>
 
-<div class="social" style="text-align: center; margin-top: 30px;">
-  <a href="https://www.linkedin.com/in/rnmohamed88/" target="_blank" style="margin: 10px;">
-    <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
-  </a>
-  <a href="https://github.com/rnmohamed88" target="_blank" style="margin: 10px;">
-    <i class="fab fa-github fa-2x" style="color: #333;"></i>
-  </a>
-  <a href="mailto:rnmohamed88@gmail.com" target="_blank" style="margin: 10px;">
-    <i class="fas fa-envelope fa-2x" style="color: #c23a2b;"></i>
-  </a>
-  <a href="tel:+201001625299" target="_blank" style="margin: 10px;">
-    <i class="fas fa-phone fa-2x" style="color: #34af23;"></i>
-  </a>
-  <a href="https://twitter.com/Sizarhero" target="_blank" style="margin: 10px;">
-    <i class="fab fa-twitter fa-2x" style="color: #1da1f2;"></i>
-  </a>
-</div>
+    <div class="social-icons">
+      <a href="https://wa.me/201001625299" target="_blank"><i class="fab fa-whatsapp" style="color: #25D366;"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook" style="color: #1877F2;"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" style="color: #E4405F;"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok" style="color: #fff;"></i></a>
+      <a href="https://twitter.com/Sizarhero" target="_blank"><i class="fab fa-twitter" style="color: #1DA1F2;"></i></a>
+    </div>
+
+    <a class="download-btn" href="cv.pdf" download>تحميل السيرة الذاتية</a>
+  </div>
+</body>
+</html>
